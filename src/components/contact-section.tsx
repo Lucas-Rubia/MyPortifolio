@@ -34,7 +34,7 @@ export function ContactSection() {
   }
 
   return (
-    <div>
+    <div className="scroll-mt-40" id="contact">
       <section className="relative border rounded-[1.25rem] overflow-hidden px-6 py-10">
         <div className="absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#d08700aa_100%)]"></div>
         <div className="max-w-lg sm:max-w-xl space-y-4 mx-auto text-center">
@@ -118,8 +118,7 @@ export function ContactSection() {
           </Form>
         </div>
       </section>
-      <footer className="flex flex-wrap justify-center gap-4 items-center text-center mx-auto sm:justify-between mt-10 text-sm text-muted-foreground">
-        <p>Todos os direitos reservados. &copy;2025</p>
+      <footer className="flex flex-wrap justify-center gap-4 items-center text-center mx-auto mt-10 text-sm text-muted-foreground">
         <p>Desenvolvido por Lucas Rubia 😎</p>
       </footer>
     </div>

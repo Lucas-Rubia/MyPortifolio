@@ -5,7 +5,10 @@ import { Badge } from "./ui/badge";
 export function ProjectsSection() {
   return (
     <section>
-      <div className="max-w-lg sm:max-w-xl space-y-4 mx-auto text-center">
+      <div
+        className="max-w-lg sm:max-w-xl space-y-4 mx-auto text-center scroll-mt-40"
+        id="projects"
+      >
         <Badge variant="secondary" className="relative">
           <span className="bg-white rounded-full size-5 flex items-center justify-center px-px">
             <Flame className="text-black fill-black" />
@@ -23,8 +26,16 @@ export function ProjectsSection() {
         </p>
       </div>
       <section className="flex flex-wrap justify-center gap-4 mt-6">
-        <div className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90">
-          <img src={IMAGES.Project01} alt="Project01" />
+        <a
+          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          target="_blank"
+          className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
+        >
+          <img
+            src={IMAGES.Project01}
+            alt="Project01"
+            className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
+          />
           <div className="absolute bottom-0 left-0 right-0 bg-white/2 backdrop-blur-md p-3">
             <h4 className="mb-2">Site Bonsaily</h4>
             <div className="flex items-center justify-between">
@@ -32,9 +43,17 @@ export function ProjectsSection() {
               <ArrowUpRight className="size-5" />
             </div>
           </div>
-        </div>
-        <div className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90">
-          <img src={IMAGES.Project02} alt="Project02" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          target="_blank"
+          className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
+        >
+          <img
+            src={IMAGES.Project02}
+            alt="Project02"
+            className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
+          />
           <div className="absolute bottom-0 left-0 right-0 bg-white/2 backdrop-blur-md p-3">
             <h4 className="mb-2">AI Sass Website Template</h4>
             <div className="flex items-center justify-between">
@@ -42,9 +61,17 @@ export function ProjectsSection() {
               <ArrowUpRight className="size-5" />
             </div>
           </div>
-        </div>
-        <div className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90">
-          <img src={IMAGES.Project03} alt="Project03" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          target="_blank"
+          className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
+        >
+          <img
+            src={IMAGES.Project03}
+            alt="Project03"
+            className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
+          />
           <div className="absolute bottom-0 left-0 right-0 bg-white/2 backdrop-blur-md p-3">
             <h4 className="mb-2">AI Integrations Apps</h4>
             <div className="flex items-center justify-between">
@@ -52,9 +79,17 @@ export function ProjectsSection() {
               <ArrowUpRight className="size-5" />
             </div>
           </div>
-        </div>
-        <div className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90">
-          <img src={IMAGES.Project04} alt="Project04" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          target="_blank"
+          className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
+        >
+          <img
+            src={IMAGES.Project04}
+            alt="Project04"
+            className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
+          />
           <div className="absolute bottom-0 left-0 right-0 bg-white/2 backdrop-blur-md p-3">
             <h4 className="mb-2">blueai website</h4>
             <div className="flex items-center justify-between">
@@ -62,9 +97,17 @@ export function ProjectsSection() {
               <ArrowUpRight className="size-5" />
             </div>
           </div>
-        </div>
-        <div className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90">
-          <img src={IMAGES.Project04} alt="Project04" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          target="_blank"
+          className="relative rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
+        >
+          <img
+            src={IMAGES.Project04}
+            alt="Project04"
+            className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
+          />
           <div className="absolute bottom-0 left-0 right-0 bg-white/2 backdrop-blur-md p-3">
             <h4 className="mb-2">blueai website</h4>
             <div className="flex items-center justify-between">
@@ -72,7 +115,7 @@ export function ProjectsSection() {
               <ArrowUpRight className="size-5" />
             </div>
           </div>
-        </div>
+        </a>
       </section>
     </section>
   );

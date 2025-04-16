@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export function HeroSection() {
   return (
-    <section className="text-center">
+    <section className="text-center scroll-mt-40" id="home">
       <div className="max-w-lg sm:max-w-xl space-y-4 mx-auto">
         <div className="border-6 rounded-full size-25 mx-auto">
           <img className="rounded-full" src={IMAGES.Profile} alt="Lucas" />
@@ -35,26 +35,63 @@ export function HeroSection() {
           <ArrowDownRight /> Veja mais sobre mim <ArrowDownLeft />
         </p>
         <div className="flex items-center justify-center gap-4">
-          <Badge variant="secondary">
-            <img src={IMAGES.Github} alt="Github" className="size-5" />
-            GitHub
-          </Badge>
-          <Badge variant="secondary">
-            <img src={IMAGES.Linkedin} alt="Linkedin" className="size-5" />
-            Linkedin
-          </Badge>
+          <a href="https://github.com/Lucas-Rubia" target="_blank">
+            <Badge
+              variant="secondary"
+              className="hover:bg-secondary-foreground/10 transition-colors"
+            >
+              <img src={IMAGES.Github} alt="Github" className="size-5" />
+              GitHub
+            </Badge>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+            target="_blank"
+          >
+            <Badge
+              variant="secondary"
+              className="hover:bg-secondary-foreground/10 transition-colors"
+            >
+              <img src={IMAGES.Linkedin} alt="Linkedin" className="size-5" />
+              Linkedin
+            </Badge>
+          </a>
         </div>
       </div>
       <section className="flex flex-wrap justify-center gap-4 mt-6">
-        <div className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90">
-          <img src={IMAGES.Project01} alt="Project01" />
-        </div>
-        <div className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90">
-          <img src={IMAGES.Project02} alt="Project02" />
-        </div>
-        <div className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90">
-          <img src={IMAGES.Project03} alt="Project03" />
-        </div>
+        <a
+          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          target="_blank"
+          className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
+        >
+          <img
+            src={IMAGES.Project01}
+            alt="Project01"
+            className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          target="_blank"
+          className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
+        >
+          <img
+            src={IMAGES.Project02}
+            alt="Project02"
+            className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          target="_blank"
+          className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
+        >
+          <img
+            src={IMAGES.Project03}
+            alt="Project03"
+            className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
+          />
+        </a>
       </section>
     </section>
   );

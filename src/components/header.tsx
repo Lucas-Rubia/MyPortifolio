@@ -4,6 +4,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { isActiveRoute } from "@/utils/is-active-route";
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -18,46 +19,94 @@ export function Header() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          <DropdownMenuItem>Início</DropdownMenuItem>
-          <DropdownMenuItem>Experiências</DropdownMenuItem>
-          <DropdownMenuItem>Projetos</DropdownMenuItem>
-          <DropdownMenuItem>Certificações</DropdownMenuItem>
-          <DropdownMenuItem>Educação</DropdownMenuItem>
+          <DropdownMenuItem asChild variant={isActiveRoute("home") ? "active" : "default"}>
+            <a href="#home">Início</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild variant={isActiveRoute("experiences") ? "active" : "default"}>
+            <a href="#experiences">Experiências</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild variant={isActiveRoute("projects") ? "active" : "default"}>
+            <a href="#projects">Projetos</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild variant={isActiveRoute("certifications") ? "active" : "default"}>
+            <a href="#certifications">Certificações</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild variant={isActiveRoute("education") ? "active" : "default"}>
+            <a href="#education">Educação</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild variant={isActiveRoute("contact") ? "active" : "default"}>
+            <a href="#contact">Entre em contato</a>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
       <nav className="hidden min-[900px]:block">
         <ul className="flex items-center text-sm gap-4">
           <li>
-            <Button size="sm" variant="secondary">
-              Início
-            </Button>
+            <a href="#home">
+              <Button
+                className="border border-transparent"
+                size="sm"
+                variant={isActiveRoute("home") ? "outline" : "ghost"}
+              >
+                Início
+              </Button>
+            </a>
           </li>
           <li>
-            <Button size="sm" variant="ghost">
-              Experiências
-            </Button>
+            <a href="#experiences">
+              <Button
+                className="border border-transparent"
+                size="sm"
+                variant={isActiveRoute("experiences") ? "outline" : "ghost"}
+              >
+                Experiências
+              </Button>
+            </a>
           </li>
           <li>
-            <Button size="sm" variant="ghost">
-              Projetos
-            </Button>
+            <a href="#projects">
+              <Button
+                className="border border-transparent"
+                size="sm"
+                variant={isActiveRoute("projects") ? "outline" : "ghost"}
+              >
+                Projetos
+              </Button>
+            </a>
           </li>
           <li>
-            <Button size="sm" variant="ghost">
-              Certificações
-            </Button>
+            <a href="#certifications">
+              <Button
+                className="border border-transparent"
+                size="sm"
+                variant={isActiveRoute("certifications") ? "outline" : "ghost"}
+              >
+                Certificações
+              </Button>
+            </a>
           </li>
           <li>
-            <Button size="sm" variant="ghost">
-              Educação
-            </Button>
+            <a href="#education">
+              <Button
+                className="border border-transparent"
+                size="sm"
+                variant={isActiveRoute("education") ? "outline" : "ghost"}
+              >
+                Educação
+              </Button>
+            </a>
           </li>
         </ul>
       </nav>
 
-      <Button className="hidden min-[900px]:flex shadow-2xl shadow-white/40 hover:shadow-white/60 transition-all" variant="outline">
-        Entre em contato
-      </Button>
+      <a href="#contact" className="hidden min-[900px]:flex">
+        <Button
+          className="shadow-2xl shadow-white/40 hover:shadow-white/60 transition-all"
+          variant="outline"
+        >
+          Entre em contato
+        </Button>
+      </a>
     </header>
   );
 }

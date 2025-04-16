@@ -4,7 +4,7 @@ import { Badge } from "./ui/badge";
 export function ExperiencesSection() {
   return (
     <section>
-      <div className="max-w-lg sm:max-w-xl space-y-4 mx-auto text-center">
+      <div className="max-w-lg sm:max-w-xl space-y-4 mx-auto text-center scroll-mt-40" id="experiences">
         <Badge variant="secondary" className="relative">
           <span className="bg-white rounded-full size-5 flex items-center justify-center px-px">
             <Flame className="text-black fill-black" />
