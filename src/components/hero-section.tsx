@@ -25,8 +25,8 @@ export function HeroSection() {
           <span className="italic text-yellow-600">Web Designer</span>
         </h1>
         <p className="text-sm text-muted-foreground font-light sm:text-base">
-          Olá, meu nome é Lucas, bem-vindo ao meu mundo. Adoro criar sites
-          lindos e atemporais e experiências digitais.
+          Olá, meu nome é Lucas, bem-vindo ao meu mundo. Curto muito criar sites e redes
+          que garante um experiências inovadora.
         </p>
         <Button variant="outline" className="shadow-2xl shadow-white">
           Entre em contato
@@ -60,34 +60,34 @@ export function HeroSection() {
       </div>
       <section className="flex flex-wrap justify-center gap-4 mt-6">
         <a
-          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          href="https://agency-web-site-eta.vercel.app/"
           target="_blank"
           className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
         >
           <img
-            src={IMAGES.Project01}
+            src={IMAGES.AgencyWeb}
             alt="Project01"
             className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          href="https://coffe-delivery-sage.vercel.app/"
           target="_blank"
           className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
         >
           <img
-            src={IMAGES.Project02}
+            src={IMAGES.CoffyDelivery}
             alt="Project02"
             className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/lucas-rubia-63865a231"
+          href="https://pomodoro-timer-neon-phi.vercel.app/"
           target="_blank"
           className="rounded-[1.25rem] border-4 overflow-hidden flex-1 min-w-75 max-w-90 group transition-colors"
         >
           <img
-            src={IMAGES.Project03}
+            src={IMAGES.PomodoroTimer}
             alt="Project03"
             className="group-hover:-mt-2 transition-all mask-x-from-70% group-hover:mask-x-from-80%"
           />

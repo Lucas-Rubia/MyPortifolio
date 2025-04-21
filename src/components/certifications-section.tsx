@@ -20,8 +20,7 @@ export function CertificationsSection() {
           O que me <span className="italic text-yellow-600">certifica?</span>
         </h1>
         <p className="text-sm text-muted-foreground font-light sm:text-base">
-          Eu crio experiências digitais que se alinham com sua marca e seus
-          objetivos, combinando criatividade com funcionalidade.
+          Aqui encontra-se o que me torna diferente e o que comprova as minha habilidades e minhas qualificações.
         </p>
       </div>
       <section className="flex flex-wrap justify-center gap-4 my-8">

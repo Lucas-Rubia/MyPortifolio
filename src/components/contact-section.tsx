@@ -52,8 +52,7 @@ export function ContactSection() {
           </h1>
           <p className="text-sm text-muted-foreground font-light sm:text-base">
             Vamos transformar sua visão em uma realidade impressionante. Entre
-            em contato hoje mesmo e comece a jornada rumo a uma presença de
-            marca marcante.
+            em contato hoje mesmo e juntos iremos nos diferencias dos concorrentes.
           </p>
           <Form {...form}>
             <form
