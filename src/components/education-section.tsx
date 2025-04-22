@@ -31,7 +31,7 @@ export function EducationSection() {
             <strong className="italic">FATEC</strong>
           </h4>
           <Badge variant="secondary" className="h-6 px-2">
-            01/01/2022 - 10/12/2024
+            10/02/2022 - 18/12/2024
           </Badge>
         </div>
         <p className="text-xs sm:text-sm mt-4">
@@ -50,7 +50,7 @@ export function EducationSection() {
             <strong className="italic">SENAI</strong>
           </h4>
           <Badge variant="secondary" className="h-6 px-2">
-            01/06/2023 - 31/08/2023
+            10/01/2023 - 20/12/2024
           </Badge>
         </div>
         <p className="text-xs sm:text-sm mt-4">

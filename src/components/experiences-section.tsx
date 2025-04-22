@@ -42,16 +42,16 @@ export function ExperiencesSection() {
             Desenvolvendo sites web com as HMTL CSS JS e React
           </p>
         </div>
-        {/* <div className="relative rounded-[1.25rem] overflow-hidden flex-1 min-w-75 max-w-90 bg-secondary/30 p-6 bg-card-image bg-cover bg-center bg-no-repeat text-primary/90">
+        <div className="relative rounded-[1.25rem] overflow-hidden flex-1 min-w-75 max-w-90 bg-secondary/30 p-6 bg-card-image bg-cover bg-center bg-no-repeat text-primary/90">
           <span className="absolute left-8 right-0 -top-3 -z-1 blur-sm h-8 w-12 bg-amber-500/30 animate-pulse" />
           <div className="size-11 rounded-full border flex items-center justify-center bg-secondary/40 mb-4">
             <Zap className="fill-white size-5" />
           </div>
           <h3 className="text-sm mb-2 sm:text-base">Desenvolvedor Backend</h3>
           <p className="text-xs max-w-74 sm:text-sm">
-            mais de 4 anos de experiência em desenvolvimento web
+            Desenvolvendo APIs com C# e .NET e abordando arquiteturas e patterns escaláveis
           </p>
-        </div> */}
+        </div>
         <div className="relative rounded-[1.25rem] overflow-hidden flex-1 min-w-75 max-w-90 bg-secondary/30 p-6 bg-card-image bg-cover bg-center bg-no-repeat text-primary/90">
           <span className="absolute left-8 right-0 -top-3 -z-1 blur-sm h-8 w-12 bg-amber-500/30 animate-pulse" />
           <div className="size-11 rounded-full border flex items-center justify-center bg-secondary/40 mb-4">

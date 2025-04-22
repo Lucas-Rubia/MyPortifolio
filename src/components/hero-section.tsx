@@ -28,9 +28,11 @@ export function HeroSection() {
           Olá, meu nome é Lucas, bem-vindo ao meu mundo. Curto muito criar sites e redes
           que garante um experiências inovadora.
         </p>
+        <a href="#contact">
         <Button variant="outline" className="shadow-2xl shadow-white">
           Entre em contato
         </Button>
+        </a>
         <p className="flex items-center justify-center gap-4 text-sm text-muted-foreground">
           <ArrowDownRight /> Veja mais sobre mim <ArrowDownLeft />
         </p>

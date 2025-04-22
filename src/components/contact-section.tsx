@@ -3,7 +3,6 @@ import { ContactSchemaType } from "@/types/schema-types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Flame } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { toast } from "sonner";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
@@ -27,11 +26,11 @@ export function ContactSection() {
     },
   });
 
-  function handleSendEmail(_: ContactSchemaType) {
-    toast("E-mail enviado com sucesso ✅", {
-      description: "Verifique sua caixa de entrada.",
-    });
-  }
+  // function handleSendEmail(_: ContactSchemaType) {
+  //   toast("E-mail enviado com sucesso ✅", {
+  //     description: "Verifique sua caixa de entrada.",
+  //   });
+  // }
 
   return (
     <div className="scroll-mt-40" id="contact">
@@ -56,7 +55,8 @@ export function ContactSection() {
           </p>
           <Form {...form}>
             <form
-              onSubmit={form.handleSubmit(handleSendEmail)}
+              action="https://formsubmit.co/lucas.de.oliveira.rubia@gmail.com" method="POST"
+              // onSubmit={form.handleSubmit(handleSendEmail)}
               className="space-y-4 text-start"
             >
               <FormField
@@ -113,6 +113,8 @@ export function ContactSection() {
               >
                 Entre em contato
               </Button>
+              <input type="hidden" name="_captcha" value="false"/>
+              <input type="hidden" name="_next" value="https://my-portifolio-nu-three.vercel.app/"/>
             </form>
           </Form>
         </div>
